@@ -1,0 +1,57 @@
+% external packages for glossaries
+\usepackage[nopostdot, style = super, nonumberlist, toc = false, section = section, nogroupskip]{glossaries-extra}
+
+% declaration of subject-specific glossaries
+\newglossary[nmb]{numbers}{nmr}{nms}{Sets and fields}
+
+% declaration of glossary entries of type 'numbers'
+\newglossaryentry{naturals}{%
+    name = \ensuremath{\N},
+    description = {Set of natural numbers}, 
+    type = numbers,
+    sort = a
+}
+
+\newglossaryentry{naturals0}{%
+    name = \ensuremath{\N_{0}},
+    description = {Set of natural numbers including 0}, 
+    type = numbers,
+    sort = b
+}
+
+\newglossaryentry{integers}{%
+    name = \ensuremath{\Z},
+    description = {Set of integers}, 
+    type = numbers,
+    sort = c
+}
+
+\newglossaryentry{rationals}{%
+    name = \ensuremath{\Q},
+    description = {Set of rational numbers}, 
+    type = numbers,
+    sort = d
+}
+
+\newglossaryentry{reals}{% 
+    name = \ensuremath{\R},
+    description = {Field of real numbers}, 
+    type = numbers,
+    sort = e
+} 
+
+\newglossaryentry{reals0}{% 
+    name = \ensuremath{\R_{\pm}},
+    description = {Set of positive/negative real numbers}, 
+    type = numbers,
+    sort = f
+}
+
+\newglossaryentry{complex}{% 
+    name = \ensuremath{\C},
+    description = {Field of complex numbers}, 
+    type = numbers,
+    sort = f
+}
+
+\makenoidxglossaries

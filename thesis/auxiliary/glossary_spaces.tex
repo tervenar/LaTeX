@@ -1,0 +1,57 @@
+% external packages for glossaries
+\usepackage[nopostdot, style = super, nonumberlist, toc = false, section = section, nogroupskip]{glossaries-extra}
+
+% declaration of subject-specific glossaries
+\newglossary[fnc]{functions}{fnt}{fns}{Sequence and function spaces}
+
+% declaration of glossary entries of type 'functions'
+\newglossaryentry{lebesgue_seq}{% 
+    name = \ensuremath{l^{p}},
+    description = {Space of \ensuremath{p}-summable sequences}, 
+    type = functions,
+    sort = a
+} 
+
+\newglossaryentry{lebesgue_func}{% 
+    name = \ensuremath{L^{p}},
+    description = {Space of \ensuremath{p}-th power Lebesgue integrable functions}, 
+    type = functions,
+    sort = a
+} 
+
+\newglossaryentry{continuous}{% 
+    name = \ensuremath{C},
+    description = {Space of continuous functions}, 
+    type = functions,
+    sort = b
+} 
+
+\newglossaryentry{cont_diff}{% 
+    name = \ensuremath{C^{n}},
+    description = {Space of \ensuremath{n} times continuously differentiable functions}, 
+    type = functions,
+    sort = c
+} 
+
+\newglossaryentry{cont_inf_diff}{% 
+    name = \ensuremath{C^{\infty} := \cap_{n\in\N}C^{n}},
+    description = {Space of smooth functions}, 
+    type = functions,
+    sort = d
+} 
+
+\newglossaryentry{cont_inf_diff_comp}{% 
+    name = \ensuremath{C^{\infty}_{c}},
+    description = {Space of compactly supported smooth functions}, 
+    type = functions,
+    sort = e
+} 
+
+\newglossaryentry{sobolev}{% 
+    name = \ensuremath{W^{k, p}},
+    description = {Sobolev space of order \ensuremath{k} of functions in \ensuremath{L^{p}}}, 
+    type = functions,
+    sort = e
+} 
+
+\makenoidxglossaries

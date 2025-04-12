@@ -1,0 +1,49 @@
+% declaration of document class
+\documentclass[12pt, class = report, crop = false, a4paper, twoside]{standalone}
+
+% external packages for document style formatting
+\usepackage[left = 2.5cm, right = 2.5cm, top = 2.5cm, bottom = 2.5cm]{geometry}
+
+% input style file
+\input{auxiliary/style}
+
+% helper for cross-referencing
+\input{auxiliary/helper}
+\usepackage{xr}
+
+% list of sections for referencing
+\myexternaldocument{chapter_I/chapter_I}
+\myexternaldocument{chapter_II/chapter_II}
+\myexternaldocument{chapter_III/chapter_III}
+
+\begin{document}
+
+% chapter declaration
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+
+% main body
+Periodic splines were first introduced in [REFERENCE]. \\
+Application include medicine, statistics, aeronautics [REFERENCES]. \\
+
+In the theory of differential equations they are used to obtain approximations for integral and differential operators [REFERENCES]. \\
+
+Classical splines were used to construct and compute wavelets [REFERENCES]. Wavelet properties: localization in time and frequency space, differentiability order, approximation order, symmetry properties, decay behavior. \\
+Wavelets applications [REFERENCES]. \\
+Wavelet generalizations: there are already some variants and generalizations of wavelet bases such as wavelet packets, multiwavelets, multivariate wavelets, wavelet frames, curvelets and others [REFERENCES] \\
+
+Fractional and complex versions of classical non-periodic polynomial B-splines were introduced in \cite{UnBl00, For+06}. \\
+
+Fractional non-periodic spline wavelets were considered in \cite{UnBl99, UnBl00}. \\
+
+MOTIVATION: for complex and fractional versions, periodization. Multiresolution analysis applications [REFERENCES]. \\
+
+The relation of B-splines and multiresolution analysis was elaborated in \cite{For11}. Periodization technique for complex B-splines was introduced in \cite{For12}. \\
+
+% description of the document structure
+In chapter \ref{chap:I} we introduce the notion of a multiresolution analysis and explore the techniques for periodization of orthogonal scaling functions and wavelets. \\
+In chapter \ref{chap:II} we review current results on the construction of periodic cardinal wavelets from cardinal B-splines. \\
+Finally, exploiting the results for periodic complex B-splines, in chapter \ref{chap:III} we construct periodic complex B-spline wavelets and prove some of their characterizations including semi-orthogonality and Riesz bounds. \\
+
+\end{document}
+

@@ -1,0 +1,34 @@
+% declaration of document class
+\documentclass[12pt, class = report, crop = false, a4paper, twoside]{standalone}
+
+% external packages for document style formatting
+\usepackage[left = 2.5cm, right = 2.5cm, top = 2.5cm, bottom = 2.5cm]{geometry}
+
+% input style file
+\input{auxiliary/style}
+
+% input glossaries
+\input{auxiliary/glossary_fields}
+\input{auxiliary/glossary_spaces}
+\input{auxiliary/glossary_specials}
+\input{auxiliary/glossary_topology}
+
+\begin{document}
+
+% main body
+
+% section declaration
+\chapter*{Notation}
+\thispagestyle{plain}
+\addcontentsline{toc}{chapter}{Notation}
+
+% main body
+\glsaddall
+\glsnogroupskiptrue
+\printnoidxglossary[type = numbers, sort = letter]
+\printnoidxglossary[type = functions, sort = letter]
+\printnoidxglossary[type = transforms, sort = letter]
+\printnoidxglossary[type = topology, sort = letter]
+\printnoidxglossary[type = specials, sort = letter]
+
+\end{document}

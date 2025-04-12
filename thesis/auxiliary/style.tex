@@ -1,0 +1,37 @@
+% external packages for text formatting
+\usepackage[shortlabels]{enumitem}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{csquotes}
+\usepackage{fancyref}
+
+% text formatting
+\setlist[enumerate]{itemsep = 0mm}
+\setlength{\parindent}{0cm}
+\usepackage{setspace}
+%\onehalfspacing
+%\singlespacing
+
+% external packages for maths environments
+\usepackage{amssymb, amsthm}
+\usepackage{mathrsfs}
+\usepackage{mathtools}
+
+% external packages for figures
+\usepackage[pdftex]{graphicx} % demo
+\usepackage{caption}
+\usepackage{subcaption}
+
+% external packages for standalone and cross-referencing
+\usepackage[subpreambles = false]{standalone}
+\usepackage{import}
+
+% bibliography style formatting
+\input{../../auxiliary/bibliography.tex}
+
+% paths for images
+\graphicspath{{images/figures}}
+
+% declaration of environments and commands
+\input{../../auxiliary/environment}
+\input{../../auxiliary/command}

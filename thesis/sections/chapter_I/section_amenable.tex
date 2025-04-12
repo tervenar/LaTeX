@@ -1,0 +1,171 @@
+% declaration of document class
+\documentclass[12pt, class = article, crop = false, a4paper, twoside]{standalone}
+
+% external packages for document style formatting
+\usepackage[left = 2.5cm, right = 2.5cm, top = 2.5cm, bottom = 2.5cm]{geometry}
+
+% input style file
+\input{../../auxiliary/style.tex}
+
+% helper for cross-referencing
+\input{../../auxiliary/helper}
+\usepackage{xr}
+
+% list of sections for referencing
+%\myexternaldocument{section_splines}
+
+\begin{document}
+
+% section declaration
+\section{Symmetric RW on finitely generated groups}
+\label{sec:amenable}
+
+% main body
+
+\cite{DOMA17}
+
+The next two results are generalizations of the case of finite stochastic matrices in \cite[Proposition 3.3]{DOMA17} and \cite[Proposition 3.4]{DOMA17}, respectively. 
+\begin{proposition}
+
+    Let $\Gamma$ be a countable discrete finitely generated group, and $\mu$ be an admissible finitely supported symmetric probability measure on $\Gamma$. Then, $\pi_{z}$ is an irreducible representation for each $z\in\Gamma$.
+\end{proposition}
+
+\begin{proof}
+
+    For $z\in\Gamma$, we get that $\K(\mathcal{H}_{z})\lhd\pi_{z}(\mathcal{T}(\Gamma, \mu))$ from \cite[Proposition 4.4]{DOAD21}. Since the image of $\pi_{z}$ contains a copy of compact operators, it is indeed an irreducible subalgebra of $\B(\mathcal{H}_{z})$.
+\end{proof}
+
+\begin{proposition}
+
+    Let $\Gamma$ be a countable discrete finitely generated group, and $\mu$ be an admissible finitely supported symmetric probability measure on $\Gamma$. Then, the representations $\pi_{z}|_{\mathcal{T}(\Gamma, \mu)}$ and $\pi_{z'}|_{\mathcal{T}(\Gamma, \mu)}$ are not unitarily equivalent for $z, z'\in\Gamma$ such that $z\neq z'$.
+\end{proposition}
+
+\begin{proof}
+
+    We suppose that $\pi_{z}$ and $\pi_{z'}$ are unitarily equivalent for $z, z'\in\Gamma$ such that $z\neq z'$, i.e. there exists a unitary $U\colon\mathcal{H}_{z}\to\mathcal{H}_{z'}$ such that $U\pi_{z}(T) = \pi_{z'}U(T)$ for all $T\in\mathcal{T}(\Gamma, \mu)$. 
+
+    Now, for $m\in\N$, let $Q^{(m)}$ denote the orthogonal projection from $\mathcal{H}$ onto $\mathcal{H}^{(m)}$, and for $x\in\Gamma$, define $Q^{(0)}_{z} := S^{(0)}_{z, z}Q^{(0)} = Q^{(0)}S^{(0)}_{z, z}$. Then, by \cite[Proposition 4.4]{DOAD21}, we get that $Q^{(0)}_{z}\in\mathcal{T}(\Gamma, \mu)$. Moreover, for $e^{(0)}_{z, z}\in\mathcal{H}_{z}$, we obtain
+    \begin{equation*}
+        (\pi_{z'}(Q^{(0)}_{z})U)(e^{(0)}_{z, z}) = (U\pi_{z}(Q^{(0)}_{z}))(e^{(0)}_{z, z}) = U(e^{(0)}_{z, z}).
+    \end{equation*}
+    On the contrary, since $(\pi_{z'}(Q^{(0)})U)(e^{(0)}_{z, z}) = c\cdot e^{(0)}_{z', z'}$ for some non-zero $c\in\C$, we have
+    \begin{equation*}
+        (\pi_{z'}(Q^{(0)}_{z})U)(e^{(0)}_{z, z}) = c\cdot\pi_{z'}(S^{(0)}_{z, z})(e^{(0)}_{z', z'}) = c\cdot \delta_{z, z'}e^{(0)}_{z', z'}.
+    \end{equation*}
+    This clearly leads to a contradiction $0 = c\cdot \delta_{z, z'}e^{(0)}_{z', z'} = U(e^{(0)}_{z, z}) \neq 0$.
+\end{proof}
+
+\begin{notation}
+
+    For $n, m\in\N$ and $(x, y)\in\Gr(P)$, denote the operators
+    \begin{equation*}
+        \begin{split}
+            T^{(n)}_{x, y}\colon \mathcal{H}(\Gamma, \mu) & \to \mathcal{H}(\Gamma, \mu), \\
+            e^{(m)}_{y', z} & \mapsto \delta_{y, y'}\sqrt{\dfrac{P^{m}(y, z)}{P^{n + m}(x, z)}}e^{(n + m)}_{x, z},
+        \end{split}
+    \end{equation*}
+    where the adjoints are given by
+    \begin{equation*}
+        \begin{split}
+            (T^{(n)}_{x, y})^{\ast}(e^{(n + m)}_{x', z}) = \delta_{x, x'}\sqrt{\dfrac{P^{m}(y, z)}{P^{n + m}(x, z)}}e^{(m)}_{y, z}.
+        \end{split}
+    \end{equation*}
+    This construction allows for $T^{(n)}_{x, y}(\mathcal{H}^{(m)}_{z})\subset \mathcal{H}^{(n + m)}_{z}$.
+\end{notation}
+
+We now present a version of \cite[Proposition 3.11]{DOMA17} for symmetric random walks on finitely generated discrete groups.
+\begin{proposition}
+
+    Let $\Gamma$ be a countable discrete finitely generated group which is not virtually $\Z$ or $\Z^{2}$, and $\mu$ be an admissible finitely supported symmetric probability measure on $\Gamma$. Then, $\pi_{z}$ is a boundary representation for each $z\in\Gamma$.
+\end{proposition}
+
+\begin{proof}
+
+    Similar to \cite[Proposition 3.11]{DOMA17}, we will apply \cite[Theorem 7.2]{ARWI11} to show that each $\pi_{z}$ is completely strongly peaking in the sense of Definition (REF). Note using the above decomposition of representations for a given irreducible representation $\rho\neq\pi_{z}$, we end up with two possibilities. Either $\rho$ is the unique extension of the irreducible representation of compact operators which is unitarily equivalent to a subrepresentation of the identity representation, and, thus, it is unitarily equivalent to some $\pi_{z'}$ for $z'\neq z$. Or $\rho$ annihilates the ideal of compact operators, i.e. it can be expressed uniquely as a composition of another irreducible representation and a quotient map into the Cuntz-Pimsner-Viselter algebra. Hence, we reduce the problem to show that there exists $T\in \mathcal{T^{+}}(\Gamma, \mu)$ such that
+    \begin{equation*}
+        \|\pi_{z}(T)\| > \max\{\sup_{z'\neq z}\|\pi_{z'}(T)\|, \|q(T)\|\}.
+    \end{equation*}
+
+    Using the action of $\Gamma$, we further reduce the problem for the first case to showing the inequality just for $\pi_{e}$ since $\|\pi_{z}(T)\| = \|\pi_{z}\circ\Ad_{z^{-1}}(T)\| = \|\pi_{e}(T)\|$.
+
+    Now, let $z\in\Gamma$ with $z\neq e$. For $n\in\N$, $y\in\Gamma$, and $(x, m)\in\ST_{y}$, we get $T^{(n)}_{x, y} = \sqrt{\dfrac{1}{P^{n}(x, y)}}S^{(n)}_{x, y}$. Hence, these operators are bounded and $T^{(n)}_{x, y}\in\mathcal{T}^{+}(\Gamma, \mu)$. We choose $T := T^{(n)}_{e, e}$ and notice that each $\mathcal{H}^{(m)}_{z}$ and even the linear spans of each $e^{m}_{e, z}$ are reducing for both $T^{\ast}T$ and $TT^{\ast}$. Thus, these operators are diagonalizable and for a fixed $n\in\N$, we get
+    \begin{equation*}
+        \left\|\pi_{e}(T)\right\|^{2} \geq \|\pi_{e}((T^{(n)}_{e, e})^{\ast}(T^{(n)}_{e, e}))(e^{(0)}_{e, e})\| = \left\|\dfrac{1}{P^{n}(e, e)}e^{(0)}_{e, e}\right\| = \dfrac{1}{P^{n}(e, e)}
+    \end{equation*}
+    and
+    \begin{equation*}
+        \begin{split}
+            \left\|\pi_{z}(T)\right\|^{2} & = \|\pi_{z}(TT^{\ast})\| = \left\|TT^{\ast}|_{\mathcal{H}_{z}}\right\| \\
+            & = \sup_{m\in\N}\left\|(T^{(n)}_{e, e})(T^{(n)}_{e, e})^{\ast}(e^{(m)}_{e, z})\right\| = \sup_{m\in\N}\dfrac{P^{m - n}(e, z)}{P^{m}(e, z)}\left\|e^{(m)}_{e, z}\right\| \\
+            & = \sup_{m\in\N}K_{\ST}((e, n), (z, m)).
+        \end{split}
+    \end{equation*}
+    Hence, we have to show the following
+    \begin{equation*}
+        \sup_{z\neq e}\left\|\pi_{z}(T)\right\|^{2} = \sup_{\substack{m\in\N \\ z\neq e}}K_{\ST}((e, n), (z, m)) < \dfrac{1}{P^{n}(e, e)} \leq \left\|\pi_{e}(T)\right\|^{2}.
+    \end{equation*}
+    Note that the space-time Markov kernel vanishes unless $(z, m)\in\ST_{e}$. Viewing the graph $\ST_{e}$ as a dense subset of the space-time Martin compactification $\Delta_{\ST}\Gamma$ yields that the value of the supremum can be attained on either $\ST_{e}$ itself or on the space-time Martin boundary $\partial_{\ST}\Gamma$. 
+    
+    First, suppose that there exists $(z_{0}, m_{0})\in\ST_{e}$ for which the value of the supremum is attained. Then, we find $n\in\N$ such that $0 < P^{n}(e, e) < 1$ and
+    \begin{equation*}
+        P^{n}(e, e)P^{m_{0}}(e, z_{0}) < P^{n + m_{0}}(e, z_{0}).
+    \end{equation*}
+    Finally, we obtain
+    \begin{equation*}
+        K_{\ST}((e, n), (z_{0}, m_{0})) = \dfrac{P^{m_{0} - n}(e, z_{0})}{P^{m_{0}}(e, z_{0})} < \dfrac{1}{P^{n}(e, e)}.
+    \end{equation*}
+    
+    Second, for $(z_{0}, m_{0})\in\partial_{\ST}\Gamma$, it follows by the Poisson-Martin representation theorem that
+    \begin{equation*}
+        K_{\ST}((e, n), (z_{0}, m_{0})) = \int_{\partial^{m}_{\ST}\Gamma}K_{\ST}((e, n), (r, \zeta))d\nu((r, \zeta))
+        \leq \sup_{(\lambda, \xi)\in\partial^{m}_{\ST}\Gamma}K_{\ST}((e, n), (\lambda, \xi))
+    \end{equation*}
+    for some probability measure $\nu$ on $\partial^{m}_{\ST}\Gamma$. Now, using Theorem 4.2 (REF!!!), we get
+    \begin{equation*}
+        K_{\ST}((e, n), (z_{0}, m_{0})) \leq \sup_{(\lambda, \xi)\in\sqcup_{\lambda\in[0, R]}\partial^{m}_{M, \lambda}\Gamma}K_{\ST}((e, n), (\lambda, \xi)).
+    \end{equation*}
+    Now, either $\lambda = 0$ and $\xi\in\partial^{m}_{M, 0}\Gamma$, implying
+    \begin{equation*}
+        K_{\ST}((e, n), (\lambda, \xi)) =  K_{0}(e, \xi)\chi_{|e| = n} \equiv 0,
+    \end{equation*}
+    or $\lambda\in(0,R]$ and $\xi\in\partial^{m}_{M, \lambda}\Gamma$, so that
+    \begin{equation*}
+        K_{\ST}((e, n), (\lambda, \xi)) = \lambda^{n}K_{\lambda}(e, \xi) \leq R^{n}.
+    \end{equation*}
+    This trivially reduces to the inequality
+    \begin{equation*}
+        R^{n}P^{n}(e, e) < 1,
+    \end{equation*}
+    which follows using \cite[Theorem 7.8]{WOWO00}.
+
+    Now, note that for $\|\pi_{e}(T)\| > \|q(T)\|$, it is enough to show
+    \begin{equation*}
+        \|q(T)\|^{2} \leq \|TT^{\ast}-Q^{(n)}_{e}TT^{\ast}\| < \dfrac{1}{P^{n}(e, e)} \leq \|\pi_{e}(T)\|^{2},
+    \end{equation*}
+    where $Q^{(n)}_{e}TT^{\ast}$ is compact as a finite-rank operator. First, we see that
+    \begin{equation*}
+        \|T\|^{2} = \sup_{z\in\Gamma}\|TT^{\ast}|_{\mathcal{H}_{z}}\| = \sup_{z\in\Gamma}\sup_{m\in\N}\dfrac{P^{m - n}(e, z)}{P^{m}(e, z)}.
+    \end{equation*}
+    Since for any $(z, m)\in\ST_{e}$, clearly $P^{n}(e, e)P^{m - n}(e, z) \leq P^{m}(e, z)$ for $(z, m)\in\ST_{e}$ and for $(e, n)\in\ST_{e}$, the equality holds, we have that $\|T\|^{2} = \dfrac{1}{P^{n}(e, e)}$. On the other hand, we get
+    \begin{equation*}
+        \|TT^{\ast}-Q^{(n)}_{e}TT^{\ast}\| = \sup_{z\in\Gamma}\sup_{m > n}\dfrac{P^{m - n}(e, z)}{P^{m}(e, z)},
+    \end{equation*}
+    which we have shown above to satisfy the strict inequality. Hence, this concludes the proof.
+\end{proof}
+
+% \begin{proposition}
+
+%     Let $\Gamma$ be a countable discrete finitely generated group which is not virtually $\Z$ or $\Z^{2}$, and $\mu$ be an admissible symmetric probability measure on $\Gamma$. Then, we have that $C^{\ast}_{\env}(\mathcal{T}^{+}(\Gamma, \mu))\cong\mathcal{T}(\Gamma, \mu)$.
+% \end{proposition}
+
+% \begin{proof}
+
+%     Given representations $\pi_{z}$ with the unique extension property, we can consider an embedding
+%     \begin{equation*}
+%         \iota := \bigoplus_{z\in\Gamma}\pi_{z}\colon\mathcal{T}(\Gamma, \mu)\to B(\oplus_{z\in\Gamma}\mathcal{H}^{z}(\Gamma, \mu))
+%     \end{equation*}
+%     given by a direct sum of irreducible pair-wise non-unitarily equivalent representations. It is completely isometric and has the unique extension property, and hence realizes Toeplitz algebra as the $C^{\ast}$-envelope of the tensor algebra. 
+% \end{proof}
+
+\end{document}
+

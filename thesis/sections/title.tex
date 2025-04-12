@@ -1,0 +1,62 @@
+% declaration of document class
+\documentclass[12pt, class = report, crop = false, a4paper, twoside]{standalone}
+
+% external packages for document style formatting
+\usepackage[left = 2.5cm, right = 2.5cm, top = 1.5cm, bottom = 2.5cm]{geometry}
+\usepackage{hyperref} 
+\usepackage[absolute, overlay]{textpos}
+
+% input style file
+\input{auxiliary/style}
+\input{auxiliary/style_title}
+\usepackage{hyperref}
+
+\begin{document}
+
+% main body
+\begin{titlepage}
+	
+	\begin{textblock}{10}[-0.1, 0.3](3.75, 1.5)
+    	\includegraphics[width=.625\textwidth]{images/logos/logo_technion.png}
+	\end{textblock}
+	\begin{textblock}{10}[0,0](10,2.5)
+	\end{textblock}
+	\changefont{ppl}{m}{n}
+	\vspace*{3.5cm}
+	\begin{center}
+		\Huge{\mytitle}
+		\vspace*{2cm} \\ % reduce vspace if title page spreads over two pages
+		\Large{
+			\iflanguage{english}{\mytype \\ of}			
+			{\mytype \\ von}
+		} \\
+		\vspace*{1cm}
+		\huge{\myname} \\
+		%\Large{\matricle} \\
+		\vspace*{2cm} % reduce vspace if title page spreads over two pages
+		\Large{
+			\iflanguage{english}{Technion - Israel Institute of Technology \\ Faculty of Mathematics}			
+			{ \\ }
+			\\
+			\myinstitute
+		}
+	\end{center}
+	\vspace*{1.8cm} % reduce vspace if title page spreads over two pages
+	\Large{
+		\begin{center}
+			\begin{tabular}[ht]{l c l}
+				\iflanguage{english}{Advisor}{Gutachter}: & \hfill  & \advisor \\
+				\iflanguage{english}{Co-advisor}{Betreuender Assistent}: & \hfill & \reviewerone \\
+			\end{tabular}
+		\end{center}
+	}
+	
+	\vspace{1.8cm} % reduce vspace if title page spreads over two pages
+    \begin{center}
+        \timeend
+    \end{center}
+	
+\end{titlepage}
+\clearpage
+
+\end{document}

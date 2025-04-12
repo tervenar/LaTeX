@@ -1,0 +1,154 @@
+% declaration of document class
+\documentclass[12pt, class = article, crop = false, a4paper, twoside]{standalone}
+
+% external packages for document style formatting
+\usepackage[left = 2.5cm, right = 2.5cm, top = 2.5cm, bottom = 2.5cm]{geometry}
+
+% input style file
+\input{auxiliary/style}
+
+% helper for cross-referencing
+\input{auxiliary/helper}
+\usepackage{xr}
+
+% list of sections for referencing
+%\myexternaldocument{section_splines}
+
+\begin{document}
+
+% section declaration
+\section{Simple random walk on the free group}
+\label{sec:free}
+
+% main body
+We first introduce a minor technical lemma similar to \cite[Lemma 3.10]{DOMA17}.
+\begin{proposition}
+\label{prop:probability:inequalities}
+
+    Let $\Gamma$ be a countable discrete group, and $\mu$ be an admissible aperiodic probability measure on $\Gamma$. Then
+    \begin{enumerate}[(i)]
+        \item there exists $n_{0}\in\N$ such that for any $n\geq n_{0}$ and any $x, y\in\Gamma$, we get 
+        \begin{equation*}
+            0 < P^{n}(x, y) < 1;
+        \end{equation*}
+        \item for $x, y\in\Gamma$ with $x\neq y$, there exists $n\in\N$ such that $0 < P^{n}(x, x) < 1$ and for all $m\in\N$ with $(y, m)\in\ST_{x}$, we have 
+        \begin{equation*}
+            P^{n}(x, x)P^{m}(x, y) < P^{n + m}(x, y).
+        \end{equation*}
+    \end{enumerate}
+\end{proposition}
+
+\begin{proof}
+
+    
+\end{proof}
+
+\begin{notation}
+
+    For $d > 0$, let $\F_{d}$ be the free group of $d$ generators $\{a_{1}, a_{2}, \dots, a_{d}\}$, and $\partial \F_{d}$ be its Gromov boundary, i.e. the space of infinite reduced words. For $(n, x)\in\ST_{e}$, define $\xi(n, x) = (\xi_{1}, \xi_{2}, \dots, \xi_{d})\in\R^{d}$ to be the vector of non-negative real numbers such that $n\xi_{i}$ is the number of times the letter $a_{i}$ occurs in $x$.
+\end{notation}
+
+\begin{theorem}[{\cite[Propositions 6-8]{LAST91}}]
+
+    Let $\F_{d}$ be the free group of $d$ generators, and $\mu$ be the probability measure inducing the nearest neighbour lazy random walk on $\F_{d}$. Let also $(n_{j}, y_{j})_{j\in\N}$ be a sequence in $\ST_{e}$ such that $(n_{j}, y_{j})\to\infty$. Then, for $(m, x)\in\ST_{e}$ and $\xi(n_{j}, y_{j})\to\xi = (\xi_{1}, \xi_{2}, \dots, \xi_{d})$:
+    \begin{enumerate}[(i)]
+        \item if $y_{j} = y\in\F_{d}$ for large enough $j\in\N$, we get
+        \begin{equation*}
+            K_{ST}((R, y), (m, x)) := R^{m}H(x, y);  
+        \end{equation*}
+        \item if $y_{j}\to\omega\in\partial \F_{d}$ as $j\to\infty$ and $\sum^{d}_{i = 1}\xi_{i} < 1$, we get
+        \begin{equation*}
+            K_{ST}((\lambda, \omega), (m, x)) := \lambda^{m}K_{\lambda}(x, \omega),
+        \end{equation*}
+        where $\lambda = e^{s(\xi)}$ with $0 < \lambda \leq R$;
+        \item if $y_{j}\to\eta\in\partial \F_{d}$ as $j\to\infty$ and $\sum^{d}_{i = 1}\xi_{i} = 1$, we get that the limit space-time Martin kernel is $0$ unless $|x| = m$ and it lies on the unique geodesic from $e$ to $\eta$, so
+        \begin{equation*}
+            K_{ST}((0, \eta), (m, x)) := (\mu(x_{1})\mu(x_{2})\dots\mu(x_{m}))^{-1}.
+        \end{equation*}
+    \end{enumerate}
+\end{theorem}
+
+\begin{proposition}
+
+    Let $\F_{d}$ be the free group of $d$ generators, and $\mu$ be the probability measure inducing the nearest neighbour lazy random walk on $\F_{d}$. Then, for each $z\in\F_{d}$, the $\pi_{z}$ is a boundary representation.
+\end{proposition}
+
+\begin{proof}
+    
+    Similar to \cite[Proposition 3.11]{DOMA17}, we will use \cite[Theorem 7.2]{ARWI11} to show that each $\pi_{z}$ is completely strongly peaking in the sense of Definition (REF). By the above decomposition of representations, it suffices to show that there exists $T\in \mathcal{T^{+}}(\Gamma, \mu)$ such that $\|\pi_{z}(T)\| > \sup_{\pi_{\mathcal{V}}}\|\pi_{\mathcal{V}}(T)\|$, where supremum is take over all $\pi_{\mathcal{V}}$ that annihilate $\mathcal{I}(\Gamma, \mu)$, and $\|\pi_{z}(T)\| > \sup_{\pi_{\mathcal{I}}}\|\pi_{\mathcal{I}}(T)\|$, where supremum is take over all $\pi_{\mathcal{I}}$ is the unique extension of $\pi_{z}|_{\mathcal{I}(\Gamma, \mu)}$ to $\mathcal{T}(\Gamma, \mu)$. For the former inequality, note that the norm \dots For the latter, using (REF) and (REF), we reduce the problem to showing that $\|\pi_{z}(T)\| > \sup_{z'\neq z}\|\pi_{z'}(T)\|$. Since each $\pi_{z}$ is equivariant with respect to the action of $\Gamma$, we reduce the problem to showing the inequality just for $\pi_{e}$.
+
+    Now, let $z\in\Gamma$ with $z\neq e$. For $m, n\in\N$ and $(x, y)\in\Gr(P^{m})$, define the operators
+    \begin{equation*}
+        \begin{split}
+            T^{(n)}_{x, y}\colon \mathcal{H}(\Gamma, \mu) & \to \mathcal{H}(\Gamma, \mu), \\
+            e^{(m)}_{y', z} & \mapsto \delta_{y, y'}\sqrt{\dfrac{P^{m}(y, z)}{P^{n + m}(x, z)}}e^{(n + m)}_{x, z},
+        \end{split}
+    \end{equation*}
+    and choose $T := T^{(n)}_{e, e}$. These operators are bounded due to \dots, and their adjoints are given by
+    \begin{equation*}
+        \begin{split}
+            (T^{(n)}_{x, y})^{\ast}\colon \mathcal{H}(\Gamma, \mu) & \to \mathcal{H}(\Gamma, \mu), \\
+                e^{(n + m)}_{x', z} & \mapsto \delta_{x, x'}\sqrt{\dfrac{P^{m}(y, z)}{P^{n + m}(x, z)}}e^{(m)}_{y, z},
+        \end{split}
+    \end{equation*}
+    Since $T^{(n)}_{x, y} = \sqrt{\dfrac{1}{P^{n}(x, y)}}S^{(n)}_{x, y}$, we have that $T\in\mathcal{T}^{+}(\Gamma, \mu)$. Moreover, having the following decomposition
+    \begin{equation*}
+        \bigoplus_{z\in\Gamma}\ell^{2}(\ST_{z}(\Gamma, \mu)) = \bigoplus_{z\in\Gamma}\bigoplus_{m\in\N}\ell^{2}(\ST^{(m)}_{z}(\Gamma, \mu)),
+    \end{equation*}
+    we notice that each $\mathcal{H}^{(m)}_{z}(\Gamma, \mu) := \ell^{2}(\ST^{(m)}_{z}(\Gamma, \mu))$ and even the linear spans of each $e^{m}_{e, z}$ are reducing for $T^{\ast}T$. Hence $T$ is diagonalizable and for a fixed $n\in\N$, we get
+    \begin{equation*}
+        \left\|\pi_{e}(T)\right\|^{2} \geq \|\pi_{e}((T^{(n)}_{e, e})^{\ast}(T^{(n)}_{e, e}))(e^{(0)}_{e, e})\| = \left\|\dfrac{1}{P^{n}(e, e)}e^{(0)}_{z, z}\right\| = \dfrac{1}{P^{n}(e, e)}
+    \end{equation*}
+    and
+    \begin{equation*}
+        \begin{split}
+            \left\|\pi_{z}(T)\right\|^{2} & = \|\pi_{z}(TT^{\ast})\| = \left\|TT^{\ast}|_{\mathcal{H}_{z}}\right\| \\
+            & = \sup_{m\in\N}\left\|(T^{(n)}_{e, e})(T^{(n)}_{e, e})^{\ast}(e^{(m)}_{e, z})\right\| = \sup_{m\in\N}\dfrac{P^{m - n}(e, z)}{P^{m}(e, z)}\left\|e^{(m)}_{e, z}\right\| \\
+            & = \sup_{m\in\N}K_{ST_{e}}((e, n), (z, m)).
+        \end{split}
+    \end{equation*}
+    Hence, we have to show the following
+    \begin{equation*}
+        \sup_{z\neq e}\left\|\pi_{z}(T)\right\|^{2} = \sup_{\substack{m\in\N \\ z\neq e}}K_{ST_{e}}((e, n), (z, m)) < \dfrac{1}{P^{n}(e, e)} \leq \left\|\pi_{e}(T)\right\|^{2}
+    \end{equation*}
+    For the supremum on the left hand side, we view the graph $\ST_{e}$ as a dense subset of the space-time Martin compactification $\Delta_{ST}\Gamma$. Now, its value can either be attained on $\ST_{e}$ itself, or on the space-time Martin boundary $\partial_{ST}\Gamma$. For the latter case, we obtain 
+    \begin{equation*}
+        \sup_{(z, m)\in\partial_{ST}\Gamma}K_{ST_{e}}((e, n), (z, m)) = \lim_{(z_{j}, m_{j})\to\infty}K_{ST_{e}}((e, n), (z_{j}, m_{j})).
+    \end{equation*}
+    Now, using Theorem 1.1, we break this down into three different cases.
+    \begin{enumerate}[(i)]
+        \item If $z_{j} = z\in\F_{d}$ for large enough $j\in\N$, then we have to show
+            \begin{equation*}
+                R^{n}H(e, z) = R^{n} < \dfrac{1}{P^{n}(e, e)}.
+            \end{equation*}
+        Using the local limit theorem for hyperbolic groups \cite[Theorem 1.1]{GOSE14}, we obtain
+            \begin{equation*}
+                P^{n}(e, e) \sim \beta(e, e)R^{-n}n^{-3/2}.
+            \end{equation*}
+        So, $P^{n}(e, e) < R^{-n}$ if we choose any $n > \beta(e, e)^{2/3}$.
+        \item If $z_{j}\to\gamma\in\partial\F_{d}$ as $j\to\infty$ and $\sum^{d}_{i = 1}\xi_{i} < 1$, then we need to show
+            \begin{equation*}
+                \lambda^{n}K_{\lambda}(e, \gamma) = \lambda^{n} < \dfrac{1}{P^{n}(e, e)},
+            \end{equation*}
+        where $0 < \lambda \leq R$. Since $\lambda^{n} \leq R^{n}$, this case reduces to the first one.
+        \item If $z_{j}\to\eta\in\partial\F_{d}$ as $j\to\infty$ and $\sum^{d}_{i = 1}\xi_{i} = 1$, then 
+        the space-time Martin kernel is identically $0$, i.e. the supremum can not be attained on the boundary.
+    \end{enumerate}
+
+    Now, if the value of the supremum is attained on $\ST_{e}$, we get
+    \begin{equation*}
+        \sup_{(z, m)\in\ST_{e}}K_{ST_{e}}((e, n), (z, m)) = \max_{(z, m)\in\ST_{e}}K_{ST_{e}}((e, n), (z, m)),
+    \end{equation*}
+    i.e. there exists $(m_{0}, z_{0})\in\ST_{e}$ for which the value is attained. Now, using Proposition \ref{prop:probability:inequalities}, we find $n\in\N$ such that $0 < P^{n}(e, e) < 1$ and
+    \begin{equation*}
+        P^{n}(e, e)P^{m_{0}}(e, z_{0}) < P^{n + m_{0}}(e, z_{0}),
+    \end{equation*}
+    and so 
+    \begin{equation*}
+        K_{ST_{e}}((e, n), (z_{0}, m_{0})) = \dfrac{P^{m_{0} - n}(e, z_{0})}{P^{m_{0}}(e, z_{0})} < \dfrac{1}{P^{n}(e, e)},
+    \end{equation*}
+    which concludes the proof.
+\end{proof}
+
+\end{document}
+

@@ -1,0 +1,31 @@
+% external packages for headers and footers style formatting
+\usepackage{fancyhdr}
+\usepackage{fancyvrb}
+\usepackage{lastpage}
+\usepackage[Lenny]{fncychap} % Options: Lenny, Glenn, Bjarne
+
+% general style formatting
+\setlength{\headheight}{30pt}
+\usepackage[
+    pdfusetitle,
+    unicode = true,
+    bookmarks = true, 
+    colorlinks = true,
+    linkcolor = blue,
+    filecolor = magenta,      
+    urlcolor = cyan,
+    citecolor = cyan
+]{hyperref}
+\pagestyle{fancy}
+\fancyhf{}
+
+% formatting of headers and footers
+\fancyhead[RE, LO]{\thepage}
+\fancyhead[RO]{\rightmark}
+\fancyhead[LE]{\leftmark}
+
+% input glossaries
+\input{auxiliary/glossary_fields}
+\input{auxiliary/glossary_spaces}
+\input{auxiliary/glossary_specials}
+\input{auxiliary/glossary_topology}

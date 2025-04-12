@@ -1,0 +1,55 @@
+% declaration of document class
+\documentclass[12pt, class = report, crop = false, a4paper, twoside]{standalone}
+
+% external packages for document style formatting
+\usepackage[left = 3.5cm, right = 2cm, top = 2cm, bottom = 2cm]{geometry}
+
+% input style files
+\input{auxiliary/style}
+\input{auxiliary/header}
+\input{auxiliary/style_title}
+
+\begin{document}
+
+% title page
+\import{sections/}{title}
+
+% table of contents
+\tableofcontents
+\newpage
+
+% introduction
+\import{sections/}{introduction}
+\newpage
+
+% notation
+\import{sections/}{notation}
+\newpage
+
+% chapter I
+\import{sections/chapter_I}{chapter_I}
+\newpage
+
+% chapter II
+\import{sections/chapter_II}{chapter_II}
+\newpage
+
+% chapter III
+\import{sections/chapter_III}{chapter_III}
+\newpage
+
+% chapter IV
+% \import{sections/chapter_IV}{chapter_IV}
+% \newpage
+
+% conclusion
+\import{sections/}{conclusion}
+\newpage
+
+% bibliography
+\addcontentsline{toc}{chapter}{Bibliography} % References
+\printbibliography
+% \printbibliography[type = article, title = {Articles only}]
+% \printbibliography[type = book, title = {Books only}]
+
+\end{document}

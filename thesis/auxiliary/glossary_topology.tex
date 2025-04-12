@@ -1,0 +1,23 @@
+% external packages for glossaries
+\usepackage[nopostdot, style = super, nonumberlist, toc = false, section = section, nogroupskip]{glossaries-extra}
+
+% declaration of subject-specific glossaries
+\newglossary[tpl]{topology}{tpg}{tlg}{Topological operators}
+
+% declaration of glossary entries of type 'topology'
+\newglossaryentry{closure}{% 
+    name = \ensuremath{\overline{A}},
+    description = {Closure of set A}, 
+    type = topology,
+    sort = a
+} 
+
+\newglossaryentry{complement}{% 
+    name = \ensuremath{A^{c} := X\setminus A},
+    description = {Complement of set A}, 
+    type = topology,
+    sort = b
+} 
+
+\makenoidxglossaries
+

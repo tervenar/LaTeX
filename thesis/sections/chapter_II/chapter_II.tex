@@ -1,0 +1,33 @@
+% declaration of document class
+\documentclass[12pt, class = report, crop = false, a4paper, twoside]{standalone}
+
+% external packages for document style formatting
+\usepackage[left = 2.5cm, right = 2.5cm, top = 2.5cm, bottom = 2.5cm]{geometry}
+
+% input style file
+\input{auxiliary/style}
+
+% helper for cross-referencing
+\input{auxiliary/helper}
+\usepackage{xr}
+
+% list of sections for referencing
+%\myexternaldocument{chapter_I/chapter_I}
+
+\begin{document}
+
+% chapter declaration
+\chapter{Periodic cardinal B-spline wavelets}
+\label{chap:II}
+
+% main body
+In section \ref{sec:splines:cardinal} we ... \\
+In section \ref{sec:wavelets:cardinal} we ... \\
+
+% section on cardinal B-splines
+\import{./}{section_splines}
+
+% section on cardinal B-spline wavelets
+\import{./}{section_wavelets}
+
+\end{document}

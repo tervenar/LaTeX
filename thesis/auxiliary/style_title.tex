@@ -1,0 +1,27 @@
+% title page packages
+\usepackage[absolute, overlay]{textpos}
+
+% title page style code
+\newcommand{\mytype}{\iflanguage{english}{Doctorate Thesis}{Кандидатская диссертация}} 
+
+\newcommand{\myname}{\iflanguage{english}{Pavel Prudnikov}{Павел Прудников}}
+\newcommand{\matricle}{106509}
+\newcommand{\mytitle}{\iflanguage{english}{Smth about random walks:D}{}}
+\newcommand{\myinstitute}{\iflanguage{english}
+{Chair of Pure Mathematics}
+{}}
+
+\newcommand{\advisor}{Prof. Dr. Baruch Solel}
+\newcommand{\reviewerone}{Prof. Dr. Adam Dor-On}
+
+\newcommand{\timeend}{\iflanguage{english}{September 1, 2026}{1 Сентября 2026}}
+\newcommand{\submissiontime}{01.09.2026}
+
+\hypersetup{
+    pdfauthor = {\myname},
+    pdftitle = {\mytitle},
+    pdfsubject = {\mytype},
+    pdfkeywords = {\mytype}
+}
+
+\newcommand{\changefont}[3]{\fontfamily{#1} \fontseries{#2} \fontshape{#3} \selectfont}

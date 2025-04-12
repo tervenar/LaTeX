@@ -1,0 +1,30 @@
+% external packages for glossaries
+\usepackage[nopostdot, style = super, nonumberlist, toc = false, section = section, nogroupskip]{glossaries-extra}
+
+% declaration of subject-specific glossaries
+\newglossary[trn]{transforms}{trs}{trf}{Integral transforms}
+\newglossary[spc]{specials}{spl}{sps}{Special symbols}
+
+% declaration of glossary entries of type 'transforms'
+\newglossaryentry{fourier}{% 
+    name = \ensuremath{\mathcal{F}} or \ensuremath{\;\widehat{ }},
+    description = {Fourier transform}, 
+    type = transforms
+} 
+
+% declaration of glossary entries of type 'specials'
+\newglossaryentry{gamma}{% 
+    name = \ensuremath{\Gamma},
+    description = {Euler Gamma function}, 
+    type = specials,
+    sort = a
+}
+
+\newglossaryentry{zeta}{% 
+    name = \ensuremath{\zeta},
+    description = {Riemann zeta function}, 
+    type = specials,
+    sort = b
+}
+
+\makenoidxglossaries

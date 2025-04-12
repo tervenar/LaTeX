@@ -1,0 +1,37 @@
+% declaration of document class
+\documentclass[12pt, class = report, crop = false, a4paper, twoside]{standalone}
+
+% external packages for document style formatting
+\usepackage[left = 2.5cm, right = 2.5cm, top = 2.5cm, bottom = 2.5cm]{geometry}
+
+% input style file
+\input{auxiliary/style}
+
+% helper for cross-referencing
+\input{auxiliary/helper}
+\usepackage{xr}
+
+% list of sections for referencing
+%\myexternaldocument{section_1}
+
+\begin{document}
+
+% chapter declaration
+%\chapter{Boundary representations for tensor algebras}
+\label{chap:I}
+
+% main body
+% In section \ref{sec:definitions}, we ... \\
+% In section \ref{sec:free}, we ... \\
+% In section \ref{sec:amenable}, we ... \\
+
+% section on space-time compactification
+\import{./}{section_general}
+
+% section on free groups
+% \import{./}{section_free_group}
+
+% section on amenable groups
+\import{./}{section_amenable}
+
+\end{document}

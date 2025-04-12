@@ -1,0 +1,245 @@
+% declaration of document class
+\documentclass[12pt, class = article, crop = false, a4paper, twoside]{standalone}
+
+% external packages for document style formatting
+\usepackage[left = 2.5cm, right = 2.5cm, top = 2.5cm, bottom = 2.5cm]{geometry}
+
+% input style file
+\input{auxiliary/style}
+
+% helper for cross-referencing
+\input{auxiliary/helper}
+\usepackage{xr}
+
+% list of sections for referencing
+%\myexternaldocument{section_splines}
+
+\begin{document}
+
+% section declaration
+\section{Ideals and representations}
+\label{sec:definitions}
+
+% main body
+\subsection{Space-time Martin boundary}
+
+We now provide definitions and notation for the space-time Martin boundary as in [REF].
+
+\begin{definition}[Space-time graph]
+
+    Let $\Gamma$ be a countable discrete group, and $\mu$ be an admissible probability measure on $\Gamma$. Then for $z\in\Gamma$, the set of vertices 
+    \begin{equation*}
+        \ST_{z} = \ST_{z}(\Gamma, \mu) := \{(y, m)\in\Gamma\times\Z_{+} \,:\, P^{m}(y, z) > 0\},
+    \end{equation*}
+    where we add an edge between $(x, n), (y, m)\in\ST_{z}$ if $m = n + 1$ and $P(x, y) > 0$,
+    is called the \textit{space-time graph} of the random walk $(\Gamma, \mu)$.
+\end{definition}
+
+\begin{definition}[Space-time Martin chain]
+\label{def:chain:space-time}
+
+    Let $\Gamma$ be a countable discrete group, and $\mu$ be an admissible probability measure on $\Gamma$. Then the Markov chain $(Y_{n})_{n\in\N}$ on $\ST_{e}$ with the transition probabilities given by
+    \begin{equation*}
+        \P[Y_{n + 1} = (y, m + 1) \,|\, Y_{n} = (x, m) ] = P(x, y),
+    \end{equation*}
+    is called the \textit{space-time Martin chain}.
+\end{definition}
+
+\begin{remark}
+    Note that for $\ST_{z}$, the transition probabilities take the form
+    \begin{equation*}
+        \P[Y_{n + 1} = (y, m + 1) \,|\, Y_{n} = (x, m) ] = ?,
+    \end{equation*}
+\end{remark}
+
+\begin{remark}
+    Transience and reducibility
+\end{remark}
+
+The following proposition serves as a definition for a space-time Martin kernel. 
+\begin{proposition}[REF]
+
+    Let $\Gamma$ be a countable discrete group, and $\mu$ be an admissible probability measure on $\Gamma$. Then the corresponding space-time Martin kernel is given by
+    \begin{equation*}
+        \begin{split}
+            K_{ST_{e}}\colon\ST_{e}\times\ST_{e} & \to (0, \infty), \\
+            ((x, m), (y, n)) & \mapsto \frac{P^{n - m}(x, y)}{P^{n}(e, y)}.
+        \end{split}
+    \end{equation*}
+\end{proposition}
+
+\begin{remark}
+
+    Using the above remark, we see that for an arbitrary $z\in\Gamma$, the space-time Martin kernel is given by
+    \begin{equation*}
+        \begin{split}
+            K_{\ST_{z}}\colon\ST_{z}\times\ST_{z} & \to (0, \infty), \\
+            ((x, m), (y, n)) & \mapsto ?.
+        \end{split}
+    \end{equation*}
+\end{remark}
+
+\begin{definition}[Space-time Martin compactification]
+
+    Let $\Gamma$ be a countable discrete group, and $\mu$ be an admissible probability measure on $\Gamma$. Then the $1$-Martin compactification of the space-time Markov chain associated with $(\Gamma, \mu)$ is called the \textit{space-time Martin compactification} of $\Gamma$ and is denoted by $\Delta_{\ST}\Gamma$. We denote the corresponding space-time Martin boundary by $\partial_{\ST}\Gamma$.
+\end{definition}
+
+\begin{proposition}[REF]
+
+    Let $\Gamma$ be a countable discrete group, $\mu$ be an admissible probability measure on $\Gamma$. Then a sequence $(y_{k}, n_{k})_{k\in\N}$ in $\ST_{e}$ converges to a point $\xi\in\partial_{ST}\Gamma$ if for all $(x, m)\in\ST_{e}$,
+    \begin{equation*}
+        \frac{P^{n - m}(x, y)}{P^{n}(e, y)}\xrightarrow{k\to\infty}h_{\xi}(x, m)
+    \end{equation*}
+    for some function $h_{\xi}\colon\ST_{e}\to\R_{+}$.
+\end{proposition}
+
+\subsection{Toeplitz algebra and representations}
+\begin{definition}[Fock space]
+
+    Let $\Gamma$ be a countable discrete group, and $\mu$ be an admissible probability measure on $\Gamma$. Then, the Hilbert space
+    \begin{equation*}
+        \mathcal{H} = \mathcal{H}(\Gamma, \mu) := \bigoplus_{z\in\Gamma}\ell^{2}(\ST_{z}(\Gamma, \mu))
+    \end{equation*}
+    is called the \textit{Fock space} of the random walk $(\Gamma, \mu)$. For each $z\in\Gamma$, we let $\{e^{(m)}_{x, z}\}_{(x, m)\in\ST_{z}}$ denote the orthonormal basis of the space
+    \begin{equation*}
+        \mathcal{H}_{z} = \mathcal{H}_{z}(\Gamma, \mu) := \ell^{2}(\ST_{z}(\Gamma, \mu)).
+    \end{equation*}
+\end{definition}
+
+\begin{remark}
+
+    Notice that trough the identification $\oplus_{m\in\N}\ell^{2}(\ST^{(m)}_{z}) = \ell^{2}(\sqcup_{m\in\N}\ST^{(m)}_{z})$
+    we obtain the following natural decomposition
+    $\oplus_{z\in\Gamma}\mathcal{H}_{z} = \oplus_{z\in\Gamma}\oplus_{m\in\N}\mathcal{H}^{(m)}_{z}$,
+    where we denote $\mathcal{H}^{(m)}_{z} := \ell^{2}(\ST^{(m)}_{z})$.
+\end{remark}
+
+\begin{remark}
+
+    Note that the map $\ST_{z}\to\ST_{g^{-1}z}, (y, m)\mapsto(g^{-1}y, m)$ induces a canonical action of the group $\Gamma\curvearrowright\mathcal{H}(\Gamma, \mu)$ via the unitaries 
+    \begin{equation*}
+        \begin{split}
+            U_{g}\colon\mathcal{H}(\Gamma, \mu) & \to \mathcal{H}(\Gamma, \mu), \\
+            e^{(m)}_{x, z} & \mapsto e^{(m)}_{g^{-1}x, g^{-1}z}.
+        \end{split}
+    \end{equation*}
+    These maps are well-defined since $U_{g}(\mathcal{H}_{z}) = \mathcal{H}_{g^{-1}z}$, and each of them sends an orthonormal basis to an orthonormal basis.
+\end{remark}
+
+\begin{remark}
+
+    The space \dots in \cite{DOMA17} is isometrically isomorphic to the Fock space above. We change the notation to allude to the space-time Markov chain defined on the space-time graph.
+\end{remark}
+
+\begin{notation}
+
+    For $n, m\in\N$ and $(x, y)\in\Gr(P)$, denote the bounded operators
+    \begin{equation*}
+        \begin{split}
+            S^{(n)}_{x, y}\colon \mathcal{H}(\Gamma, \mu) & \to\mathcal{H}(\Gamma, \mu), \\
+            e^{(m)}_{y', z} & \mapsto\delta_{y, y'}\sqrt{\frac{P^{n}(x, y)P^{m}(y, z)}{P^{n + m}(x, z)}}e^{(n + m)}_{x, z},
+        \end{split}
+    \end{equation*}
+    where the adjoints are given by
+    \begin{equation*}
+        (S^{(n)}_{x, y})^{\ast}(e^{(n + m)}_{x', z}) = \delta_{x, x'}\sqrt{\frac{P^{m}(x, y)P^{n}(y, z)}{P^{m + n}(x, z)}}e^{(n)}_{y, z}.
+    \end{equation*}
+    Moreover, we have that $S^{(n)}_{x, y}(\mathcal{H}^{(m)}_{z})\subset \mathcal{H}^{(n + m)}_{z}$.
+\end{notation}
+
+\begin{definition}[Toeplitz algebra, tensor algebra]
+
+    Let $\Gamma$ be a countable discrete group, and $\mu$ be an admissible probability measure on $\Gamma$. Then, 
+    \begin{enumerate}[(i)]
+        \item the $C^{\ast}$-algebra
+            \begin{equation}
+                \mathcal{T}(\Gamma, \mu) := C^{*}(S^{(n)}_{x, y} \,:\, (x, y)\in\Gr(P^{n}), n\in\N) \subset \mathbb{B}(\mathcal{H}(\Gamma, \mu))
+            \end{equation}
+            is called the \textit{Toeplitz algebra} associated with the random walk $(\Gamma, \mu)$;
+        \item the operator algebra
+            \begin{equation}
+                \mathcal{T}^{+}(\Gamma, \mu) := \overline{\Alg}^{\|\cdot\|}(S^{(n)}_{x, y} \,:\, (x, y)\in\Gr(P^{n}), n\in\N) \subset \mathbb{B}(\mathcal{H}(\Gamma, \mu))
+            \end{equation}
+            is called the \textit{tensor algebra} associated with the random walk $(\Gamma, \mu)$.
+    \end{enumerate}
+\end{definition}
+
+\begin{definition}[Cuntz algebra]
+
+    Let $\Gamma$ be a countable discrete group, and $\mu$ be an admissible probability measure on $\Gamma$. Then, the space 
+    \begin{equation}
+        \mathcal{J} = \mathcal{J}(\Gamma, \mu) := \mathcal{T}(\Gamma, \mu)\cap\prod_{z\in \Gamma}\K(\mathcal{H}_{z}(\Gamma, \mu))
+    \end{equation}
+    is called the \textit{Cuntz ideal} of $\mathcal{T}(\Gamma, \mu)$, and the quotient $C^{\ast}$-algebra
+    \begin{equation}
+        \mathcal{O} = \mathcal{O}(\Gamma, \mu) := \mathcal{T}(\Gamma, \mu)/\mathcal{J}(\Gamma, \mu)
+    \end{equation}
+    is called the \textit{Cuntz algebra} associated with the random walk $(\Gamma, \mu)$.
+\end{definition}
+
+\begin{definition}[Cuntz-Pimsner-Viselter algebra]
+
+    Let $\Gamma$ be a countable discrete group, and $\mu$ be an admissible probability measure on $\Gamma$. Then, the space 
+    \begin{equation}
+        \mathcal{I} = \mathcal{I}(\Gamma, \mu) := \bigoplus_{z\in \Gamma}\K(\mathcal{H}_{z}(\Gamma, \mu))
+    \end{equation}
+    is called the \textit{Cuntz-Pimsner-Viselter ideal} of $\mathcal{T}(\Gamma, \mu)$, and the quotient $C^{\ast}$-algebra
+    \begin{equation}
+        \mathcal{V} = \mathcal{V}(\Gamma, \mu) := \mathcal{T}(\Gamma, \mu)/\mathcal{I}(\Gamma, \mu)
+    \end{equation}
+    is called the \textit{Cuntz-Pimsner-Viselter algebra} associated with the random walk $(\Gamma, \mu)$.
+\end{definition}
+
+\begin{notation}
+
+    For $z\in\Gamma$, we let $\pi_{z}$ denote the representations of $\mathcal{T}(\Gamma, \mu)$ given by
+    \begin{equation}
+        \begin{split}
+            \pi_{z}\colon \mathcal{T}(\Gamma, \mu) & \to \mathbb{B}(\mathcal{H}_{z}(\Gamma, \mu)), \\
+            T & \mapsto T|_{\mathcal{H}_{z}},
+        \end{split}
+    \end{equation}
+    and for $n\in\N$, we let $\pi^{(n)}_{z}$ denote the representations of $n$-th amplification $M_{n}(\mathcal{T}(\Gamma, \mu))$ given by
+    \begin{equation}
+        \begin{split}
+            \pi^{(n)}_{z}\colon M_{n}(\mathcal{T}(\Gamma, \mu)) & \to \mathbb{B}(\mathcal{H}_{z}(\Gamma, \mu)^{^{\oplus n}}), \\
+            [T_{ij}]^{n}_{i, j = 1} & \mapsto [T_{ij}|_{\mathcal{H}_{z}}]^{n}_{i, j = 1}.
+        \end{split}
+    \end{equation}
+\end{notation}
+
+\begin{remark}
+
+    We can extend an action $\Gamma\curvearrowright\mathcal{H}(\Gamma, \mu)$ via unitaries to a natural action $\Gamma\curvearrowright\mathcal{T}(\Gamma, \mu)$ via isometric $\ast$-isomorphisms 
+    \begin{equation*}
+        \begin{split}
+            \Ad_{g}\colon\mathcal{T}(\Gamma, \mu) & \to \mathcal{T}(\Gamma, \mu), \\
+            S^{(n)}_{x, y} & \mapsto U_{g}S^{(n)}_{x, y}U^{-1}_{g}.
+        \end{split}
+    \end{equation*}
+    These maps are well-defined since for $g\in\Gamma$, $n, m\in\N$, and $(x, y)\in\Gr(P)$, we get
+    \begin{equation*}
+        \begin{split}
+            (U_{g}S^{(n)}_{x, y}U^{-1}_{g})(e^{(m)}_{y', z}) & = U_{g}S^{(n)}_{x, y}(e^{(m)}_{gy', gz}) \\
+            & = U_{g}\left(\delta_{y, gy'}\sqrt{\frac{P^{n}(x, y)P^{m}(y, gz)}{P^{n + m}(x, gz)}}e^{(n + m)}_{x, gz}\right) \\
+            & = \delta_{y, gy'}\sqrt{\frac{P^{n}(x, y)P^{m}(y, gz)}{P^{n + m}(x, gz)}}e^{(n + m)}_{g^{-1}x, z} \\
+            & = \delta_{g^{-1}y, y'}\sqrt{\frac{P^{n}(g^{-1}x, g^{-1}y)P^{m}(g^{-1}y, z)}{P^{n + m}(g^{-1}x, z)}}e^{(n + m)}_{g^{-1}x, z} \\
+            & = S^{(n)}_{g^{-1}x, g^{-1}y}(e^{(m)}_{y', z}).
+        \end{split}
+    \end{equation*}
+    This action leaves the tensor algebra invariant, and, moreover, is compatible with the representations above in the sense that $\pi_{z}\circ\Ad_{g} = \pi_{gz}$
+    as for $g\in\Gamma$, $n\in\N$ and $(x, y)\in\Gr(P)$, we obtain
+    \begin{equation*}
+        \pi_{z}\circ\Ad_{g}(S^{(n)}_{x, y}) = S^{(n)}_{g^{-1}x, g^{-1}y}|_{\mathcal{H}_{z}} = S^{(n)}_{x, y}|_{\mathcal{H}_{gz}} = \pi_{gz}(S^{(n)}_{x, y}).
+    \end{equation*}
+    Note that the representations are not unitarily equivalent for different elements of the group, so $\Gamma$ can not act via unitaries.
+\end{remark}
+
+From \cite[Proposition 4.4]{DOAD21}, we see that $\mathcal{I}(\Gamma, \mu)$ is an ideal in the Toeplitz algebra $\mathcal{T}(\Gamma, \mu)$ whenever $\mu$ is finitely supported. Similar to \cite[Section 3]{DOMA17}, using the following short exact sequence 
+\begin{equation*}
+    0\to \mathcal{I}(\Gamma, \mu) \to \mathcal{T}(\Gamma, \mu) \to \mathcal{V}(\Gamma, \mu) \to 0
+\end{equation*}
+and the discussion preceding \cite[Theorem 1.3.4]{ARWI76}, we see that given any representation $\rho$, it decomposes uniquely into a central direct sum $\rho = \rho_{\mathcal{I}}\oplus\rho_{\mathcal{V}}$ of representations, where $\rho_{\mathcal{I}}$ is the unique extension of $\rho|_{\mathcal{I}(\Gamma, \mu)}$ to $\mathcal{T}(\Gamma, \mu)$, and $\rho_{\mathcal{V}}$ annihilates $\mathcal{I}(\Gamma, \mu)$. Note that for an irreducible representation, one of the summands is trivial.
+
+\end{document}
+
