@@ -1,0 +1,90 @@
+[0] Config.pm:308> INFO - This is Biber 2.20
+[0] Config.pm:311> INFO - Logfile is 'chapter_I.blg'
+[40] biber-darwin:340> INFO - === Sun Apr 13, 2025, 14:02:10
+[49] Biber.pm:420> INFO - Reading 'chapter_I.bcf'
+[96] Biber.pm:994> INFO - Found 5 citekeys in bib section 0
+[103] Biber.pm:4463> INFO - Processing section 0
+[109] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/ARFI22.bib' for section 0
+[110] bibtex.pm:1713> INFO - LaTeX decoding ...
+[111] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/ARFI22.bib'
+[112] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/ARWI03.bib' for section 0
+[113] bibtex.pm:1713> INFO - LaTeX decoding ...
+[113] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/ARWI03.bib'
+[114] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/ARWI11.bib' for section 0
+[114] bibtex.pm:1713> INFO - LaTeX decoding ...
+[115] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/ARWI11.bib'
+[131] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/ARWI76.bib' for section 0
+[131] bibtex.pm:1713> INFO - LaTeX decoding ...
+[132] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/ARWI76.bib'
+[145] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/AVAN73.bib' for section 0
+[146] bibtex.pm:1713> INFO - LaTeX decoding ...
+[147] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/AVAN73.bib'
+[147] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/CHDO+19.bib' for section 0
+[147] bibtex.pm:1713> INFO - LaTeX decoding ...
+[148] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/CHDO+19.bib'
+[148] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/CHER08.bib' for section 0
+[149] bibtex.pm:1713> INFO - LaTeX decoding ...
+[149] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/CHER08.bib'
+[149] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/DAKE15.bib' for section 0
+[150] bibtex.pm:1713> INFO - LaTeX decoding ...
+[151] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/DAKE15.bib'
+[151] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/DOAD21.bib' for section 0
+[151] bibtex.pm:1713> INFO - LaTeX decoding ...
+[152] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/DOAD21.bib'
+[154] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/DODU23.bib' for section 0
+[155] bibtex.pm:1713> INFO - LaTeX decoding ...
+[155] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/DODU23.bib'
+[156] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/DOMA17.bib' for section 0
+[156] bibtex.pm:1713> INFO - LaTeX decoding ...
+[157] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/DOMA17.bib'
+[160] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/DOSH23.bib' for section 0
+[160] bibtex.pm:1713> INFO - LaTeX decoding ...
+[161] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/DOSH23.bib'
+[161] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/DRMC05.bib' for section 0
+[161] bibtex.pm:1713> INFO - LaTeX decoding ...
+[162] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/DRMC05.bib'
+[162] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/DUMA22.bib' for section 0
+[163] bibtex.pm:1713> INFO - LaTeX decoding ...
+[164] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/DUMA22.bib'
+[164] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/GOSE14.bib' for section 0
+[164] bibtex.pm:1713> INFO - LaTeX decoding ...
+[166] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/GOSE14.bib'
+[166] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/KAVE83.bib' for section 0
+[166] bibtex.pm:1713> INFO - LaTeX decoding ...
+[167] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/KAVE83.bib'
+[167] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/KEHA59.bib' for section 0
+[168] bibtex.pm:1713> INFO - LaTeX decoding ...
+[169] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/KEHA59.bib'
+[169] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/KEHA63.bib' for section 0
+[170] bibtex.pm:1713> INFO - LaTeX decoding ...
+[171] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/KEHA63.bib'
+[171] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/LAST91.bib' for section 0
+[172] bibtex.pm:1713> INFO - LaTeX decoding ...
+[173] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/LAST91.bib'
+[173] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/MAGR66.bib' for section 0
+[173] bibtex.pm:1713> INFO - LaTeX decoding ...
+[174] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/MAGR66.bib'
+[174] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/MUCA19.bib' for section 0
+[175] bibtex.pm:1713> INFO - LaTeX decoding ...
+[175] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/MUCA19.bib'
+[176] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/SAST78.bib' for section 0
+[176] bibtex.pm:1713> INFO - LaTeX decoding ...
+[177] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/SAST78.bib'
+[178] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/SAST97.bib' for section 0
+[178] bibtex.pm:1713> INFO - LaTeX decoding ...
+[179] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/SAST97.bib'
+[179] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/SEEU81.bib' for section 0
+[179] bibtex.pm:1713> INFO - LaTeX decoding ...
+[181] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/SEEU81.bib'
+[181] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/STCH66.bib' for section 0
+[182] bibtex.pm:1713> INFO - LaTeX decoding ...
+[183] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/STCH66.bib'
+[183] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/WOWO00.bib' for section 0
+[183] bibtex.pm:1713> INFO - LaTeX decoding ...
+[184] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/WOWO00.bib'
+[193] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[193] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[193] Biber.pm:4283> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[193] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[200] bbl.pm:676> INFO - Writing 'chapter_I.bbl' with encoding 'UTF-8'
+[201] bbl.pm:779> INFO - Output to chapter_I.bbl

@@ -44,10 +44,10 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>section_amenable.bcf</file>
+      <file>chapter_I.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>section_amenable.bbl</file>
+      <file>chapter_I.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -65,19 +65,19 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>section_amenable</infile>
+      <infile>chapter_I</infile>
     </cmdline>
     <input>
-      <file>section_amenable.bcf</file>
+      <file>chapter_I.bcf</file>
     </input>
     <output>
-      <file>section_amenable.bbl</file>
+      <file>chapter_I.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>section_amenable.bbl</file>
+      <file>chapter_I.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>section_amenable.bcf</file>
+      <file>chapter_I.bcf</file>
     </requires>
     <requires type="editable">
       <file>../../bibliography/ARFI22.bib</file>

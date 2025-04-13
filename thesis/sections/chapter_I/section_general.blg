@@ -1,0 +1,45 @@
+[0] Config.pm:308> INFO - This is Biber 2.20
+[0] Config.pm:311> INFO - Logfile is 'section_general.blg'
+[38] biber-darwin:340> INFO - === Sun Apr 13, 2025, 14:14:46
+[48] Biber.pm:420> INFO - Reading 'section_general.bcf'
+[93] Biber.pm:994> INFO - Found 3 citekeys in bib section 0
+[101] Biber.pm:4463> INFO - Processing section 0
+[107] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/ARFI22.bib' for section 0
+[107] bibtex.pm:1713> INFO - LaTeX decoding ...
+[109] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/ARFI22.bib'
+[109] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/ARWI03.bib' for section 0
+[109] bibtex.pm:1713> INFO - LaTeX decoding ...
+[110] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/ARWI03.bib'
+[110] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/ARWI11.bib' for section 0
+[111] bibtex.pm:1713> INFO - LaTeX decoding ...
+[112] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/ARWI11.bib'
+[112] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/ARWI76.bib' for section 0
+[112] bibtex.pm:1713> INFO - LaTeX decoding ...
+[113] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/ARWI76.bib'
+[138] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/AVAN73.bib' for section 0
+[139] bibtex.pm:1713> INFO - LaTeX decoding ...
+[140] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/AVAN73.bib'
+[140] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/CHDO+19.bib' for section 0
+[140] bibtex.pm:1713> INFO - LaTeX decoding ...
+[141] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/CHDO+19.bib'
+[141] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/CHER08.bib' for section 0
+[142] bibtex.pm:1713> INFO - LaTeX decoding ...
+[142] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/CHER08.bib'
+[142] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/DAKE15.bib' for section 0
+[143] bibtex.pm:1713> INFO - LaTeX decoding ...
+[144] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/DAKE15.bib'
+[144] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/DOAD21.bib' for section 0
+[144] bibtex.pm:1713> INFO - LaTeX decoding ...
+[145] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/DOAD21.bib'
+[147] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/DODU23.bib' for section 0
+[147] bibtex.pm:1713> INFO - LaTeX decoding ...
+[148] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/DODU23.bib'
+[148] Biber.pm:4654> INFO - Looking for bibtex file '../../bibliography/DOMA17.bib' for section 0
+[149] bibtex.pm:1713> INFO - LaTeX decoding ...
+[150] bibtex.pm:1519> INFO - Found BibTeX data source '../../bibliography/DOMA17.bib'
+[158] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[158] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[158] Biber.pm:4283> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[158] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[163] bbl.pm:676> INFO - Writing 'section_general.bbl' with encoding 'UTF-8'
+[163] bbl.pm:779> INFO - Output to section_general.bbl

@@ -44,10 +44,10 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>section_amenable.bcf</file>
+      <file>main.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>section_amenable.bbl</file>
+      <file>main.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -65,51 +65,22 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>section_amenable</infile>
+      <infile>main</infile>
     </cmdline>
     <input>
-      <file>section_amenable.bcf</file>
+      <file>main.bcf</file>
     </input>
     <output>
-      <file>section_amenable.bbl</file>
+      <file>main.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>section_amenable.bbl</file>
+      <file>main.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>section_amenable.bcf</file>
+      <file>main.bcf</file>
     </requires>
     <requires type="editable">
-      <file>../../bibliography/ARFI22.bib</file>
-      <file>../../bibliography/ARWI03.bib</file>
-      <file>../../bibliography/ARWI11.bib</file>
-      <file>../../bibliography/ARWI76.bib</file>
-      <file>../../bibliography/AVAN73.bib</file>
-      <file>../../bibliography/CHDO+19.bib</file>
-      <file>../../bibliography/CHER08.bib</file>
-      <file>../../bibliography/DAKE15.bib</file>
-      <file>../../bibliography/DOAD21.bib</file>
-      <file>../../bibliography/DODU23.bib</file>
-      <file>../../bibliography/DOMA17.bib</file>
-      <file>../../bibliography/DOSH23.bib</file>
-      <file>../../bibliography/DRMC05.bib</file>
-      <file>../../bibliography/DUMA22.bib</file>
-      <file>../../bibliography/GOSE14.bib</file>
-      <file>../../bibliography/KAVE83.bib</file>
-      <file>../../bibliography/KEHA59.bib</file>
-      <file>../../bibliography/KEHA63.bib</file>
-      <file>../../bibliography/LAST91.bib</file>
-      <file>../../bibliography/MAGR66.bib</file>
-      <file>../../bibliography/MUCA19.bib</file>
-      <file>../../bibliography/SAST78.bib</file>
-      <file>../../bibliography/SAST97.bib</file>
-      <file>../../bibliography/SEEU81.bib</file>
-      <file>../../bibliography/STCH66.bib</file>
-      <file>../../bibliography/WOWO00.bib</file>
-      <file>../../bibliography/WOWO09.bib</file>
-      <file>../../bibliography/WOWO21.bib</file>
-      <file>../../bibliography/YAAR16.bib</file>
-      <file>../../bibliography/YAAR24.bib</file>
+      <file>DOMA17.bib</file>
     </requires>
   </external>
 </requests>

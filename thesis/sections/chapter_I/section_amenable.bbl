@@ -1,0 +1,174 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{ARWI11}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=35f97fccba24b922c27ae1ae4f24a1ef}{%
+           family={Arveson},
+           familyi={A\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{35f97fccba24b922c27ae1ae4f24a1ef}
+      \strng{fullhash}{35f97fccba24b922c27ae1ae4f24a1ef}
+      \strng{fullhashraw}{35f97fccba24b922c27ae1ae4f24a1ef}
+      \strng{bibnamehash}{35f97fccba24b922c27ae1ae4f24a1ef}
+      \strng{authorbibnamehash}{35f97fccba24b922c27ae1ae4f24a1ef}
+      \strng{authornamehash}{35f97fccba24b922c27ae1ae4f24a1ef}
+      \strng{authorfullhash}{35f97fccba24b922c27ae1ae4f24a1ef}
+      \strng{authorfullhashraw}{35f97fccba24b922c27ae1ae4f24a1ef}
+      \field{labelalpha}{Arv11}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1565-8511}
+      \field{journaltitle}{Israel Journal of Mathematics}
+      \field{month}{08}
+      \field{number}{1}
+      \field{title}{The noncommutative Choquet boundary II: Hyperrigidity}
+      \field{volume}{184}
+      \field{year}{2011}
+      \field{pages}{349\bibrangedash 385}
+      \range{pages}{37}
+      \verb{doi}
+      \verb 10.1007/s11856-011-0071-z
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s11856-011-0071-z
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s11856-011-0071-z
+      \endverb
+    \endentry
+    \entry{DOAD21}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=6a6b539d86976559fae9c7156feae677}{%
+           family={Dor-On},
+           familyi={D\bibinithyphendelim O\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{6a6b539d86976559fae9c7156feae677}
+      \strng{fullhash}{6a6b539d86976559fae9c7156feae677}
+      \strng{fullhashraw}{6a6b539d86976559fae9c7156feae677}
+      \strng{bibnamehash}{6a6b539d86976559fae9c7156feae677}
+      \strng{authorbibnamehash}{6a6b539d86976559fae9c7156feae677}
+      \strng{authornamehash}{6a6b539d86976559fae9c7156feae677}
+      \strng{authorfullhash}{6a6b539d86976559fae9c7156feae677}
+      \strng{authorfullhashraw}{6a6b539d86976559fae9c7156feae677}
+      \field{labelalpha}{Dor21}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Documenta mathematica}
+      \field{title}{Toeplitz quotient C*-algebras and ratio limits for random walks}
+      \field{volume}{26}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://par.nsf.gov/biblio/10321912
+      \endverb
+      \verb{url}
+      \verb https://par.nsf.gov/biblio/10321912
+      \endverb
+    \endentry
+    \entry{DOMA17}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=6a6b539d86976559fae9c7156feae677}{%
+           family={Dor-On},
+           familyi={D\bibinithyphendelim O\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod}}}%
+        {{hash=32229cc2278ee9619627e8b36518355f}{%
+           family={Markiewicz},
+           familyi={M\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Basel}%
+      }
+      \strng{namehash}{c3698eaf161f7c620a293a21b356469f}
+      \strng{fullhash}{c3698eaf161f7c620a293a21b356469f}
+      \strng{fullhashraw}{c3698eaf161f7c620a293a21b356469f}
+      \strng{bibnamehash}{c3698eaf161f7c620a293a21b356469f}
+      \strng{authorbibnamehash}{c3698eaf161f7c620a293a21b356469f}
+      \strng{authornamehash}{c3698eaf161f7c620a293a21b356469f}
+      \strng{authorfullhash}{c3698eaf161f7c620a293a21b356469f}
+      \strng{authorfullhashraw}{c3698eaf161f7c620a293a21b356469f}
+      \field{labelalpha}{DM17}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0378620X}
+      \field{issue}{2}
+      \field{journaltitle}{Integral Equations and Operator Theory}
+      \field{month}{6}
+      \field{title}{C*-Envelopes of Tensor Algebras Arising from Stochastic Matrices}
+      \field{volume}{88}
+      \field{year}{2017}
+      \field{pages}{185\bibrangedash 227}
+      \range{pages}{43}
+      \verb{doi}
+      \verb 10.1007/S00020-017-2382-X/METRICS
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s00020-017-2382-x
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s00020-017-2382-x
+      \endverb
+      \keyw{Boundary representations,C*-Envelope,Classification,Cuntz–Pimsner algebra,Stochastic matrix}
+    \endentry
+    \entry{WOWO00}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=08dc1887cfc4e137166d98664c0ebfec}{%
+           family={Woess},
+           familyi={W\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{08dc1887cfc4e137166d98664c0ebfec}
+      \strng{fullhash}{08dc1887cfc4e137166d98664c0ebfec}
+      \strng{fullhashraw}{08dc1887cfc4e137166d98664c0ebfec}
+      \strng{bibnamehash}{08dc1887cfc4e137166d98664c0ebfec}
+      \strng{authorbibnamehash}{08dc1887cfc4e137166d98664c0ebfec}
+      \strng{authornamehash}{08dc1887cfc4e137166d98664c0ebfec}
+      \strng{authorfullhash}{08dc1887cfc4e137166d98664c0ebfec}
+      \strng{authorfullhashraw}{08dc1887cfc4e137166d98664c0ebfec}
+      \field{labelalpha}{Woe00}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Cambridge Tracts in Mathematics}
+      \field{title}{Random Walks on Infinite Graphs and Groups}
+      \field{year}{2000}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

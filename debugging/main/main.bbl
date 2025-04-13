@@ -1,0 +1,73 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{DOMA17}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=6a6b539d86976559fae9c7156feae677}{%
+           family={Dor-On},
+           familyi={D\bibinithyphendelim O\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod}}}%
+        {{hash=32229cc2278ee9619627e8b36518355f}{%
+           family={Markiewicz},
+           familyi={M\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Basel}%
+      }
+      \strng{namehash}{c3698eaf161f7c620a293a21b356469f}
+      \strng{fullhash}{c3698eaf161f7c620a293a21b356469f}
+      \strng{fullhashraw}{c3698eaf161f7c620a293a21b356469f}
+      \strng{bibnamehash}{c3698eaf161f7c620a293a21b356469f}
+      \strng{authorbibnamehash}{c3698eaf161f7c620a293a21b356469f}
+      \strng{authornamehash}{c3698eaf161f7c620a293a21b356469f}
+      \strng{authorfullhash}{c3698eaf161f7c620a293a21b356469f}
+      \strng{authorfullhashraw}{c3698eaf161f7c620a293a21b356469f}
+      \field{labelalpha}{DM17}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0378620X}
+      \field{issue}{2}
+      \field{journaltitle}{Integral Equations and Operator Theory}
+      \field{month}{6}
+      \field{title}{C*-Envelopes of Tensor Algebras Arising from Stochastic Matrices}
+      \field{volume}{88}
+      \field{year}{2017}
+      \field{pages}{185\bibrangedash 227}
+      \range{pages}{43}
+      \verb{doi}
+      \verb 10.1007/S00020-017-2382-X/METRICS
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s00020-017-2382-x
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s00020-017-2382-x
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

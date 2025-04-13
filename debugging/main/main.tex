@@ -1,0 +1,29 @@
+% declaration of document class
+\documentclass[12pt, class = report, crop = false, a4paper, twoside]{standalone}
+
+% external packages for document style formatting
+\usepackage[left = 3.5cm, right = 2cm, top = 2cm, bottom = 2cm]{geometry}
+
+% bibliography style formatting
+\usepackage[
+    backend = biber,
+    natbib = true,
+    style = alphabetic,
+    sorting = nyt,
+    doi = false,
+    isbn = false,
+    url = false,
+    eprint = false
+]{biblatex}
+
+\addbibresource{../bibliography/DOMA17.bib}
+
+\begin{document}
+
+Check the information at \cite[Theorem 4.1]{DOMA17}.
+% \addcontentsline{toc}{chapter}{Bibliography} % References
+\printbibliography
+% \printbibliography[type = article, title = {Articles only}]
+% \printbibliography[type = book, title = {Books only}]
+
+\end{document}
